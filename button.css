@@ -1,3 +1,16 @@
+table, tr, td {
+    border: 1px;
+    text-align: center;
+    margin: auto;
+}
+
+.center {
+  margin: auto;
+  width: 80%;
+  border: 1px solid green;
+  padding: 2px;
+}
+
 button {
   height: 30px;
   width: 30px;
@@ -12,3 +25,6 @@ button.current {
               0 0 0 4px black;
 }
 
+body {
+  min-width: 600px;
+}

@@ -2,32 +2,45 @@
 <html>
   <head>
     <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="chota.min.css">
   </head>
   <body>
-    <h3>Aliaser</h3><br>
-    <button id="changeColor"></button>
-    <script src="popup.js"></script>
+    <h3>LinkGenie</h3><br>
 
-    <style type="text/css">
-</style>
-<table cellspacing="0" cellpadding="0">
-<thead>
-  <tr>
-    <th class="tg-0lax">Alias</th>
-    <th class="tg-0lax">Target</th>
-    <th class="tg-0lax">Enabled</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td><input type="text" id="alias0" name="alias0"><br><br>
-</td>
-    <td><input type="text" id="target0" name="target0"><br><br>
-    <td><input type="checkbox" id="checkbox0" name="checkbox0"><br><br>
-</td>
-  </tr>
-</tbody>
+    <section id="main" class="center">
+<table>
+    <thead>
+        <tr>
+            <th colspan="3">Redirections</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>site</td>
+            <td>
+              <div>
+                <label for="input-alias">URL:</label>
+                <input name="input-alias" type="url" placeholder="https://alejandro.sajaroff.com" required autofocus>
+              </div>
+
+            </td>
+            <td>
+              <div>
+                <label for="input-enabled">Enable?</label>
+                <input name="input-enabled" type="checkbox" checked="true">
+              </div>
+          </td>
+        </tr>
+    </tbody>
 </table>
-  </body>
+
+<!-- button id="addAlias">Add</button> -->
+    <a class="button outline dark" id="addAlias">Add</a>
+
+    <script src="popup.js"></script>
+    </section>
+
+</body>
 </html>
 
