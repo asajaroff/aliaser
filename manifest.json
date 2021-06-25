@@ -1,0 +1,16 @@
+{
+  "author": "Alejandro Sajaroff",
+  "name": "Aliaser",
+  "description": "A small application for URL manipulation",
+  "manifest_version": 3,
+  "version": "0.1",
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
